@@ -19,7 +19,6 @@ function startQuiz() {
   }
 
   let dubai = prompt("Have you ever been to Dubai? Yes or No");
-  let DUBAI = dubai.toUpperCase();
 
   if (dubai === "yes") {
     console.log(dubai);
@@ -30,7 +29,6 @@ function startQuiz() {
   }
 
   let cat = prompt("Do you have a cat?");
-  let CAT = cat.toUpperCase();
 
   if (cat === "yes") {
     console.log(cat);
@@ -39,4 +37,18 @@ function startQuiz() {
     console.log("Not everyone likes cats");
     alert("Not everyone likes cats");
   }
+}
+
+// while (question !== "yes" && !== "no") {
+//   console.log
+//   alert =
+// }
+
+// document.write(name)
+
+function getUsername() {
+  let username = prompt("What is your name");
+  alert = "hello";
+
+  document.write(name);
 }
