@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  background: url(/3860328.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+body {
+  font-family: "Sora", sans-serif;
+  color: white;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 30;
+  max-width: 1100px;
+}
+
+.container-06 {
+  margin: 0 auto;
+  padding: 0 30;
+  max-width: 1100px;
+}
+.container-01 {
+  margin: 0 auto;
+  padding: 0 30;
+  max-width: 1100px;
+}
+.container-02 {
+  margin: 0 auto;
+  padding: 0 30;
+  max-width: 1100px;
+}
+
+.container-05 {
+  margin: 0 auto;
+  padding: 0 30;
+  max-width: 1100px;
+}
+
+.container-03 {
+  margin: 0 auto;
+  padding: 0 30;
+  max-width: 1100px;
+}
+
+.container-04 {
+  margin: 0 auto;
+  padding: 0 30;
+  max-width: 1100px;
+}
+
+.container {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  cursor: pointer;
+  border-style: groove;
+  background-color: #fed2c100;
+  color: white;
+  padding: 7px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+.btn:active {
+  box-shadow: 7px 7px 30px 7px #323f6982;
+}
+
+.navbar {
+  height: 80px;
+  color: white;
+}
+
+.navbar ul {
+  font-size: 1.2rem;
+  display: flex;
+  list-style: none;
+}
+
+.navbar li {
+  margin: 40px;
+}
+
+.logo {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.navbar li:hover {
+  cursor: pointer;
+  text-decoration: underline #fed2c1;
+  text-underline-offset: 2px;
+}
+
+/* Welcome  */
+
+.container-01 {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.welcome {
+  margin: 40px;
+}
+
+h1 {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-size: 2.5rem;
+}
+
+/* section 2 Bio */
+
+.container-02 {
+  background-color: rgba(50, 63, 105, 0.509);
+  border-radius: 10px;
+  border: 2px solid #fed2c1;
+  height: 100%;
+  display: row;
+  align-items: center;
+}
+
+.bio p {
+  padding: 2px;
+}
+.me {
+  margin: 22px;
+  align-items: center;
+  border-radius: 10px;
+  width: 500px;
+}
+
+.bio h2 {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 10px;
+  padding: 10px;
+}
+
+.bio p {
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Eduction */
+
+.education {
+  margin: 40px;
+}
+
+.container-03 {
+  background-color: rgba(50, 63, 105, 0.509);
+  border-radius: 10px;
+  border: 2px solid #fed2c1;
+}
+
+section li {
+  padding: 15px;
+  margin-left: 40px;
+  list-style-type: circle;
+}
+
+/* work */
+
+.container-04 {
+  background-color: #323f6982;
+  border-radius: 10px;
+  border: 2px solid #fed2c1;
+  height: 100%;
+  display: row;
+  align-items: center;
+}
+
+h3 {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* goals */
+
+.goals {
+  margin: 40px;
+}
+
+h4 {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-align: center;
+  font-size: 2rem;
+  margin: 5px;
+  padding: 5px;
+}
+
+.container-05 {
+  background-color: rgba(50, 63, 105, 0.509);
+  border-radius: 10px;
+  border: 2px solid #fed2c1;
+  height: 100%;
+  display: row;
+  align-items: center;
+}
+
+footer {
+  height: 60px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}

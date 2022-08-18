@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
+    <title>About Me</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+      <div class="container">
+      <a href="#" class="logo">TDesgin</a>
+        <ul>
+          <li><a href="#"></a>About-me</li>
+          <li><a href="#"></a>Contact me</li>
+        </ul>
+              <button class="btn" onclick="startQuiz()">Start Quiz</button>
+    <script>
+
+function startQuiz() {
+  let name = prompt("Hi, Welcome to my quiz. Let's start. What is your name?");
+
+  alert("Hi" + " " + name + "," + "What a great name");
+  console.log("Hi" + " ," + name);
+
+  let question = prompt(
+    "Lets get to know each other better. I will ask a few YES or NO questions and lets see how we get on. Type Yes to start :)"
+  );
+
+  if (question === "yes") {
+    alert("Great," + " " + name + " " + "Lets get started");
+    console.log("Great lets get started");
+  } else {
+    console.log("You sure you dont wanna try");
+    alert(name + "You sure you dont wanna try");
+  }
+
+  let dubai = prompt("Have you ever been to Dubai? Yes or No");
+  let DUBAI = dubai.toUpperCase();
+
+  if (dubai === "yes") {
+    console.log(dubai);
+    alert("Amazing hope you liked it");
+  } else {
+    console.log("Maybe some other time");
+    alert("Maybe you can go next holiday");
+  }
+
+  let cat = prompt("Do you have a cat?");
+  let CAT = cat.toUpperCase();
+
+  if (cat === "yes") {
+    console.log(cat);
+    alert(name + " " + " I love cats as well");
+  } else {
+    console.log("Not everyone likes cats");
+    alert("Not everyone likes cats");
+  }
+}
+
+  </script>
+      </div>
+    </header>
+
+    <section class="welcome">
+      <div class="container-01">
+        <h1>Welcome to my Page</h1>
+      </div>
+    </section>
+
+    <section class="bio">
+      <div class="container-02">
+        <h2>My Bio</h2>
+        <p>
+          Hi, I'm Tim, I'm 34 years old, I'm from the UK but I've lived in Dubai for almost 30 years.
+          I love to spearfish, go offroading in the desert and travel. I have 4 cats and so I'm officially classified as a 'crazy cat person'!
+          I started learning Crypto in early 2020 and have continued to develop my interests and knowledge in this area, I am now learning to become a Software Developer.
+          I am passionate about this industry and I love what I have learnt so far! I am excited to see where this next step takes me. 
+          Have a nosey around my website, and feel free to contact me for any further information. Peace.
+        </p>
+                <img class="me" src="/WhatsApp Image 2022-08-17 at 5.15.21 PM.jpeg" alt="Profile pic" />
+                          <img class="me" src="/427465ce-5eb7-47d7-ab1d-9b242aefda2e.jpeg" alt="Profile pic" />
+      </div>
+  
+
+    <section class="education">
+      <div class="container-03">
+        <h2>Here is a breif look at my Education</h2>
+        <ul>
+          <li>Jess Primariy School</li>
+          <li>English College</li>
+          <li>Emirates Avaitaion Collage</li>
+          <li>Tech Educators</li>
+        </ul>
+      </div>
+    </section> 
+
+   <section class="work">
+    <div class="container-04">
+      <h3>Work Experience</h3>
+      <p>
+        I started working in the events industry from the age of 18. I have over 15 years experience, working my way up from loading trucks and organising cabels to becoming Head of the Audio Department. This entailed organising and being accountable for a team of 10 people.
+      </p>
+
+      <ul>
+        <li>Production Technology LLC. (2006-2020)</li>
+        <li>Creative Technology (2021-2022) - Al Wasl Dome Expo 2020</li>
+      </ul>
+    </div>
+</section>
+
+    <section class="goals">
+      <div class="container-05">
+        <h4>Goals</h4>
+        <p>
+          I am immersing myself completely in Software Development which will enable me to achieve my goals, including working in Web3 and creating smart contracts for projects all over the world. I want to continue this whilst following my crypto passion.
+
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <a class="copy" href="">&copy; Tim 2022</a>
+        <a class="copy" href="">Start Quiz</a>
+      </div>
+    </footer>
+
+    <script scr="app.js"></script>
+  </body>
+</html>
