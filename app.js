@@ -1,14 +1,23 @@
 "Use strict";
 
 function startQuiz() {
-  let name = prompt("Hi, Welcome to my quiz. Let's start. What is your name?");
+  let name = prompt(
+    "Hi, Welcome to my quiz. Let's start. What is your name?"
+  ).toLowerCase();
 
-  alert("Hi" + " " + name + "" + "What a great name");
+  alert("Hi " + name + " What a great name");
   console.log("Hi" + " " + name);
 
   let question = prompt(
     "Lets get to know each other better. I will ask a few YES or NO questions and lets see how we get on. Type Yes to start :)"
-  );
+  ).toLowerCase();
+  while (question !== "yes" && question !== "no") {
+    console.log("Please only anwser yes or no");
+    alert = "Please only anwser yes or no";
+    question = prompt(
+      "Lets get to know each other better. I will ask a few YES or NO questions and lets see how we get on. Type Yes to start"
+    );
+  }
 
   if (question === "yes") {
     alert("Great," + " " + name + " " + "Lets get started");
@@ -18,8 +27,11 @@ function startQuiz() {
     alert(name + "You sure you dont wanna try");
   }
 
-  let dubai = prompt("Have you ever been to Dubai? Yes or No");
-
+  let dubai = prompt("Have you ever been to Dubai? Yes or No").toLowerCase;
+  while (dubai !== "yes" && dubai !== "no") {
+    console.log("Please only anwser yes or no");
+    alert = "Please only anwser yes or no";
+  }
   if (dubai === "yes") {
     console.log(dubai);
     alert("Amazing hope you liked it");
@@ -28,17 +40,20 @@ function startQuiz() {
     alert("Maybe you can go next holiday");
   }
 
-  let cat = prompt("Do you have a cat?");
+  let cat = prompt("Do you have a cat?").toLowerCase;
+  while (cat !== "yes" && cat !== "no") {
+    console.log("Please only anwser yes or no");
+    alert = "Please only anwser yes or no";
 
-  if (cat === "yes") {
-    console.log(cat);
-    alert(name + " " + " I love cats as well");
-  } else {
-    console.log("Not everyone likes cats");
-    alert("Not everyone likes cats");
+    if (cat === "yes") {
+      console.log(cat);
+      alert(name + " " + " I love cats as well");
+    } else {
+      console.log("Not everyone likes cats");
+      alert("Not everyone likes cats");
+    }
   }
 }
-
 // while (question !== "yes" && !== "no") {
 //   console.log
 //   alert =
@@ -46,9 +61,18 @@ function startQuiz() {
 
 // document.write(name)
 
-function getUsername() {
-  let username = prompt("What is your name");
-  alert = "hello";
+// function getUsername() {
+//   let username = prompt("What is your name");
+//   alert = "hello";
 
-  document.write(name);
-}
+//   document.write(name);
+// }
+
+// switch (key) {
+//   case value:
+
+//     break;
+
+//   default:
+//     break;
+// }
