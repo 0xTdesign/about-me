@@ -44,6 +44,12 @@ p {
   max-width: 1100px;
 }
 
+.container-06 {
+  margin: 0 auto;
+  padding: 0 30;
+  max-width: 1100px;
+}
+
 .container-03 {
   margin: 0 auto;
   padding: 0 30;
@@ -172,7 +178,7 @@ h1 {
 }
 
 section li {
-  padding: 15px;
+  padding: 5px;
   margin-left: 40px;
   list-style-type: circle;
 }
@@ -221,6 +227,36 @@ h4 {
   align-items: center;
 }
 
+.container-06 {
+  background-color: rgba(50, 63, 105, 0.509);
+  border-radius: 10px;
+  border: 2px solid #fed2c1;
+  height: 100%;
+  align-items: center;
+}
+
+.tokens li {
+  list-style: none;
+  text-decoration: none;
+}
+.tokens ul {
+  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.container-06 p {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.tokens {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 footer {
   height: 60px;
 }
@@ -228,4 +264,13 @@ footer {
 footer a {
   text-decoration: none;
   color: white;
+}
+
+#btc,
+#eth,
+#avax,
+#bnb,
+#sol,
+#egg {
+  color: green;
 }

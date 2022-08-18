@@ -84,6 +84,12 @@ function startQuiz() {
       // console.log("Its not for everyone");
       alert(name + "Its not for everyone");
     }
+
+    let game = prompt(
+      "Lets play a game. This will be a number guessing game. Pick a number between 1 & 10"
+    ).toLowerCase;()
+
+    
   }
 }
 
