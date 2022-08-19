@@ -171,6 +171,13 @@ h1 {
   margin: 40px;
 }
 
+.education ul {
+  margin-left: 30px;
+  padding: 10px;
+}
+.education li {
+  padding: 5px;
+}
 .container-03 {
   background-color: rgba(50, 63, 105, 0.509);
   border-radius: 10px;
@@ -178,12 +185,19 @@ h1 {
 }
 
 section li {
-  padding: 5px;
-  margin-left: 40px;
   list-style-type: circle;
 }
 
 /* work */
+
+.work ul {
+  margin-left: 30px;
+  padding: 10px;
+}
+
+.work li {
+  padding: 5px;
+}
 
 .container-04 {
   background-color: #323f6982;
@@ -236,14 +250,18 @@ h4 {
 }
 
 .tokens li {
-  list-style: none;
+  padding: 5px;
+  list-style-type: decimal;
   text-decoration: none;
 }
-.tokens ul {
+.tokens ol {
+  padding: 10px;
+  font-size: 0.9rem;
   margin-bottom: 15px;
   justify-content: center;
   align-items: center;
-  display: flex;
+  display: inline-block;
+  column-count: 5;
 }
 
 .container-06 p {
@@ -253,8 +271,18 @@ h4 {
 }
 
 .tokens {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+}
+.tokens span {
+  padding: 5px;
+}
+
+.token-1 {
+  padding: 5px;
 }
 
 footer {
@@ -271,6 +299,11 @@ footer a {
 #avax,
 #bnb,
 #sol,
-#egg {
-  color: green;
+#egg,
+#doge,
+#shib,
+#xrp,
+#ada {
+  color: #fed2c1;
+  font-weight: bold;
 }
