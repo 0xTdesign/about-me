@@ -82,38 +82,41 @@ function startQuiz() {
   }
   if (crypto === "yes") {
     // console.log(crypto);
-    alert(name + "That's great hope it moons hard");
+    alert(name + " That's great hope it moons hard");
     score++;
   } else {
     // console.log("Its not for everyone");
-    alert(name + "Its not for everyone");
+    alert(name + " Its not for everyone");
   }
 
   // Game starts
-  let game = prompt(
-    "Lets play a number guessing game. Pick a number between 1-10"
-  );
 
+  alert("Lets play a number guessing game. Pick a number between 1-10");
+
+  let game; // prompt(
+  // "Lets play a number guessing game. Pick a number between 1-10");
+  let favNumber = Math.floor(Math.random() * 10 + 1);
+  console.log(favNumber);
   for (let i = 0; i <= 4; i++) {
     if (i === 4) {
       alert(
-        "You have exceed your maximum amount of trys. Better luck next time"
+        "You have exceed your maximum amount of trys. Better luck next time the number is" +
+          favnumber
       );
       break;
     }
-    if (game <= 6) {
-      alert("So close bit its higher than that");
-      game = prompt(
-        "Lets play a number guessing game. Pick a number between 1-10"
-      );
-    } else if (game >= 8) {
+
+    game = prompt(
+      "Lets play a number guessing game. Pick a number between 1-10"
+    );
+    if (game < favNumber) {
+      alert("So close but its higher than that");
+    } else if (game > favNumber) {
       alert("So close. But its lower than that");
-      game = prompt(
-        "Lets play a number guessing game. Pick a number between 1-10"
-      );
     } else {
-      alert(" Well done you got it");
+      alert(" Well done you got it " + favNumber);
       score++;
+      break;
     }
   }
 
