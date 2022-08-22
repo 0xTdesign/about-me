@@ -4,12 +4,13 @@
   box-sizing: border-box;
 }
 html {
-  background: url(/img/3860328.jpg) no-repeat center center fixed;
+  background: url(https://wallpaperaccess.com/full/6093753.jpg) no-repeat center
+    center fixed;
   background-size: cover;
 }
 body {
   font-family: "Sora", sans-serif;
-  color: white;
+  color: #fffffa;
 }
 
 p {
@@ -72,7 +73,7 @@ p {
 .btn {
   cursor: pointer;
   border-style: groove;
-  background-color: #fed2c100;
+  background-color: #1d1c2a;
   color: white;
   padding: 7px;
   font-size: 1.2rem;
@@ -81,6 +82,10 @@ p {
 
 .btn:active {
   box-shadow: 7px 7px 30px 7px #323f6982;
+}
+
+img:hover {
+  opacity: 0.8;
 }
 
 .navbar {
@@ -106,7 +111,7 @@ p {
 
 .navbar li:hover {
   cursor: pointer;
-  text-decoration: underline #fed2c1;
+  text-decoration: underline #8d8a82;
   text-underline-offset: 2px;
 }
 
@@ -132,9 +137,9 @@ h1 {
 /* section 2 Bio */
 
 .container-02 {
-  background-color: rgba(50, 63, 105, 0.509);
+  background-color: hsla(244, 20%, 14%, 0.586);
   border-radius: 10px;
-  border: 2px solid #fed2c1;
+  border: 2px solid #8d8a82;
   height: 100%;
   display: row;
   align-items: center;
@@ -179,9 +184,9 @@ h1 {
   padding: 5px;
 }
 .container-03 {
-  background-color: rgba(50, 63, 105, 0.509);
+  background-color: hsla(244, 20%, 14%, 0.586);
   border-radius: 10px;
-  border: 2px solid #fed2c1;
+  border: 2px solid #8d8a82;
 }
 
 section li {
@@ -200,9 +205,9 @@ section li {
 }
 
 .container-04 {
-  background-color: #323f6982;
+  background-color: hsla(244, 20%, 14%, 0.586);
   border-radius: 10px;
-  border: 2px solid #fed2c1;
+  border: 2px solid #8d8a82;
   height: 100%;
   display: row;
   align-items: center;
@@ -233,18 +238,18 @@ h4 {
 }
 
 .container-05 {
-  background-color: rgba(50, 63, 105, 0.509);
+  background-color: hsla(244, 20%, 14%, 0.586);
   border-radius: 10px;
-  border: 2px solid #fed2c1;
+  border: 2px solid #8d8a82;
   height: 100%;
   display: row;
   align-items: center;
 }
 
 .container-06 {
-  background-color: rgba(50, 63, 105, 0.509);
+  background-color: hsla(244, 20%, 14%, 0.586);
   border-radius: 10px;
-  border: 2px solid #fed2c1;
+  border: 2px solid #8d8a82;
   height: 100%;
   align-items: center;
 }
@@ -304,6 +309,6 @@ footer a {
 #shib,
 #xrp,
 #ada {
-  color: #fed2c1;
+  color: #e8e8e3;
   font-weight: bold;
 }

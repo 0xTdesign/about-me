@@ -164,7 +164,7 @@ function startQuiz() {
 
   let input; // users input
   let myFavnumber = Math.floor(Math.random() * 5 + 1); // random number no higher that 30
-  console.log(myFavnumber); // this allows us to see what the random generated number is in the console. 
+  console.log(myFavnumber); // this allows us to see what the random generated number is in the console.
 
   for (let i = 1; i < 4; i++) {
     // it starts at 1 then if it is less than 4 it will + 1 every time
@@ -185,47 +185,55 @@ function startQuiz() {
     if (input < myFavnumber) {
       // By comparing the user input numner to check if it is lower to the Fav mumber
       alert("Sorry that is to low"); // An alert will display if it is lower
-    } else if (input > myFavnumber) { // This Else if then checks the input to see if it is greater than the number. 
-      alert("Good guess but that is to high");// An alert will pop on the screen to let the user know if it is to high
-    } else { // this Else statement is used to show when the user has guessed the numbeer correctly 
+    } else if (input > myFavnumber) {
+      // This Else if then checks the input to see if it is greater than the number.
+      alert("Good guess but that is to high"); // An alert will pop on the screen to let the user know if it is to high
+    } else {
+      // this Else statement is used to show when the user has guessed the numbeer correctly
       alert("Well done you got it. The number was " + myFavnumber); // The final alert message lets the user know that the number is correct and by adding myFavnumber at the end will show the number in the alert message
-      break;// finally the brrak to exit the loop and it has ended 
+      break; // finally the brrak to exit the loop and it has ended
     }
   }
 
-let car = ['red','pink','brown']; // These are my colours that are in a array.
-let userGuess = prompt("Lets see how well you know me. What colour is my car?") ;// This will prompt on the screen 
-let correct = false;// This is use to exit For loop. Once it is set to true it is correct.
-let correctString = ""; // This is used to check the answers to the string above.
+  let car = ["red", "pink", "brown"]; // These are my colours that are in a array.
+  let userGuess = prompt(
+    "Lets see how well you know me. What colour is my car?"
+  ); // This will prompt on the screen
+  let correct = false; // This is use to exit For loop. Once it is set to true it is correct.
+  let correctString = ""; // This is used to check the answers to the string above.
 
-for( let i = 0; i < car.correctString; i++) { //
-if (i === 0) {
-correctString += car[i];
-}else if {
-correctString += " ," + correct[i];
-}
-}
+  for (let i = 0; i < car.length; i++) {
+    // [i] starts at 0 so it goes throw the array. Car.length checks all the items in the Array
+    if (i === 0) {
+      // starts at 0 and moves up
+      correctString += car[i]; //
+    } else {
+      correctString += " ," + correct[i];
+    }
 
-for (i = 1; i <= 6; i++) {// It will start at 1 and it gives the user 6 trys
-if ( i === 6){ // This gives the user 6 attempts 
-alert("Sorry but that is not correct")
-break;// I need the break here so that it does not keep looping 
-}
-}
+    for (i = 1; i <= 6; i++) {
+      // It will start at 1 and it gives the user 6 trys
+      if (i === 6) {
+        // This gives the user 6 attempts
+        alert("Sorry but that is not correct");
+        break; // I need the break here so that it does not keep looping
+      }
+    }
 
-for ( i = 0; i < correctString; i++){
-  if (userGuess === car[i]){
-    correct = true;
-    alert("Well done you got it correct " + correctString )
-    break;
+    for (i = 0; i < car.length; i++) {
+      if (userGuess === car[i]) {
+        correct = true;
+        alert("Well done you got it correct " + correctString);
+        break;
+      }
+    }
+    if ((correct = true)) {
+      break;
+    } else correct = false;
+    alert(" Sorry that is not correct");
   }
-}if (correct = true){
-break;
-}else (correct = false){
-alert(" Sorry that is not correct")
-}
 
-alert("Well done in the game. You final score is " + score + "/7");
+  alert("Well done in the game. You final score is " + score + "/7");
 }
 
 // if (game <= 6) {
