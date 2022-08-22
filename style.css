@@ -4,13 +4,14 @@
   box-sizing: border-box;
 }
 html {
-  background: url(https://wallpaperaccess.com/full/6093753.jpg) no-repeat center
-    center fixed;
-  background-size: cover;
+  background-color: #1d1c2a;
 }
 body {
   font-family: "Sora", sans-serif;
   color: #fffffa;
+  background: url(https://wallpaperaccess.com/full/6093753.jpg) no-repeat center
+    center fixed;
+  background-size: cover;
 }
 
 p {
@@ -256,7 +257,6 @@ h4 {
 
 .tokens li {
   padding: 5px;
-  list-style-type: decimal;
   text-decoration: none;
 }
 .tokens ol {
