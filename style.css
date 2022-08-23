@@ -257,6 +257,7 @@ h4 {
 
 .tokens li {
   padding: 5px;
+  list-style-type: decimal;
   text-decoration: none;
 }
 .tokens ol {
