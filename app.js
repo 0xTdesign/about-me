@@ -2,12 +2,10 @@
 
 let score = 0;
 
-function startQuiz() {
-  let name = prompt("Hi, Welcome to my quiz. Let's start. What is your name?");
-
-  alert("Hi " + name + " What a great name");
-  console.log("Hi" + " " + name);
-
+/*
+Question 1
+*/
+function questionOne() {
   let question = prompt(
     "Lets get to know each other better. I will ask a few YES or NO questions and lets see how we get on. Type Yes to start :)"
   ).toLowerCase();
@@ -26,7 +24,13 @@ function startQuiz() {
     // console.log("You sure you dont wanna try");
     alert(name + "You sure you dont wanna try");
   }
+}
 
+/*
+Question 2
+*/
+
+function questionTwo() {
   let dubai = prompt("Have you ever been to Dubai? Yes or No").toLowerCase();
   while (dubai !== "yes" && dubai !== "no") {
     // console.log("Please only anwser yes or no");
@@ -41,7 +45,13 @@ function startQuiz() {
     console.log("Maybe some other time");
     alert("Maybe you can go next holiday");
   }
+}
 
+/*
+Question 3
+*/
+
+function questionThree() {
   let cat = prompt("Do you have a cat?").toLowerCase();
   while (cat !== "yes" && cat !== "no") {
     // console.log("Please only anwser yes or no");
@@ -56,7 +66,13 @@ function startQuiz() {
     // console.log("Maybe some other time");
     alert("Not everyone likes cats");
   }
+}
 
+/*
+Question 4
+*/
+
+function questionFour() {
   let course = prompt(
     "Are you interested in Software Developemnt"
   ).toLowerCase();
@@ -73,7 +89,13 @@ function startQuiz() {
     // console.log("Its not for everyone");
     alert("Its not for everyone");
   }
+}
 
+/*
+Question 5
+*/
+
+function questionFive() {
   let crypto = prompt("Have you ever bought any Crypto?").toLowerCase();
   while (crypto !== "yes" && crypto !== "no") {
     // console.log("Please only anwser yes or no");
@@ -88,20 +110,25 @@ function startQuiz() {
     // console.log("Its not for everyone");
     alert(name + " Its not for everyone");
   }
+}
 
-  // Game starts
+/*
+Question 6
+*/
 
-  alert("Lets play a number guessing game. Pick a number between 1-10");
+function questionSix() {
+  //  alert("Lets play a number guessing game. Pick a number between 1-10");
 
   let game; // prompt(
   // "Lets play a number guessing game. Pick a number between 1-10");
-  let favNumber = Math.floor(Math.random() * 10 + 1);
+  let favNumber = Math.floor(Math.random() * 10) + 1;
   console.log(favNumber);
+
   for (let i = 0; i <= 4; i++) {
+    console.log(i);
     if (i === 4) {
       alert(
-        "You have exceed your maximum amount of trys. Better luck next time the number is" +
-          favnumber
+        `You have exceeded your maximum amount of tries. Better luck next time. The number was ${favNumber}.`
       );
       break;
     }
@@ -114,14 +141,18 @@ function startQuiz() {
     } else if (game > favNumber) {
       alert("So close. But its lower than that");
     } else {
-      alert(" Well done you got it " + favNumber);
       score++;
+      alert(" Well done you got it " + favNumber);
       break;
     }
   }
+}
 
-  // Colour game
+/*
+Question 7
+*/
 
+function questionSeven() {
   let answers = ["yellow", "green", "black"];
   let guess = prompt("What is my favourite colour?");
   let won = false;
@@ -158,8 +189,183 @@ function startQuiz() {
     } else {
       guess = prompt("Nope, Sorry not the correct answer!");
     }
-    alert("Well done in the game. You final score is " + score + "/7");
+    // alert("Well done in the game. You final score is " + score + "/7");
   }
+}
+
+function startQuiz() {
+  let name = prompt("Hi, Welcome to my quiz. Let's start. What is your name?");
+
+  alert("Hi " + name + " What a great name");
+  console.log(`Hi ${name}`);
+
+  questionOne();
+  console.log("q1");
+  questionTwo();
+  console.log("q2");
+  questionThree();
+  console.log("q3");
+  questionFour();
+  console.log("q4");
+  questionFive();
+  console.log("q5");
+  questionSix();
+  console.log("q6");
+  questionSeven();
+  console.log("q7");
+  alert("Well done in the game. You final score is " + score + "/7");
+  // let question = prompt(
+  //   "Lets get to know each other better. I will ask a few YES or NO questions and lets see how we get on. Type Yes to start :)"
+  // ).toLowerCase();
+  // while (question !== "yes" && question !== "no") {
+  //   // console.log("Please only anwser yes or no");
+  //   alert("Please only anwser yes or no");
+  //   question = prompt(
+  //     "Lets get to know each other better. I will ask a few YES or NO questions and lets see how we get on. Type Yes to start"
+  //   );
+  // }
+
+  // if (question === "yes") {
+  //   alert("Great," + " " + name + " " + "Lets get started");
+  //   // console.log("Great lets get started");
+  // } else {
+  //   // console.log("You sure you dont wanna try");
+  //   alert(name + "You sure you dont wanna try");
+  // }
+
+  // let dubai = prompt("Have you ever been to Dubai? Yes or No").toLowerCase();
+  // while (dubai !== "yes" && dubai !== "no") {
+  //   // console.log("Please only anwser yes or no");
+  //   alert("Please only anwser yes or no");
+  //   dubai = prompt("Have you ever been to Dubai? Yes or No").toLowerCase();
+  // }
+  // if (dubai === "yes") {
+  //   // console.log(dubai);
+  //   alert("Amazing hope you liked it");
+  //   score++;
+  // } else {
+  //   console.log("Maybe some other time");
+  //   alert("Maybe you can go next holiday");
+  // }
+
+  // let cat = prompt("Do you have a cat?").toLowerCase();
+  // while (cat !== "yes" && cat !== "no") {
+  //   // console.log("Please only anwser yes or no");
+  //   alert("Please only anwser yes or no");
+  //   dubai = prompt("Do you have a cat?").toLowerCase();
+  // }
+  // if (cat === "yes") {
+  //   // console.log(cat);
+  //   alert(name + " I love cats as well");
+  //   score++;
+  // } else {
+  //   // console.log("Maybe some other time");
+  //   alert("Not everyone likes cats");
+  // }
+
+  // let course = prompt(
+  //   "Are you interested in Software Developemnt"
+  // ).toLowerCase();
+  // while (course !== "yes" && course !== "no") {
+  //   // console.log("Please only anwser yes or no");
+  //   alert("Please only anwser yes or no");
+  //   course = prompt("Are you interested in Software Developemnt").toLowerCase();
+  // }
+  // if (course === "yes") {
+  //   // console.log(course);
+  //   alert(name + " That's amazing. There are so many videos and course online");
+  //   score++;
+  // } else {
+  //   // console.log("Its not for everyone");
+  //   alert("Its not for everyone");
+  // }
+
+  // let crypto = prompt("Have you ever bought any Crypto?").toLowerCase();
+  // while (crypto !== "yes" && crypto !== "no") {
+  //   // console.log("Please only anwser yes or no");
+  //   alert("Please only anwser yes or no");
+  //   crypto = prompt("Have you ever bought any Crypto?").toLowerCase();
+  // }
+  // if (crypto === "yes") {
+  //   // console.log(crypto);
+  //   alert(name + " That's great hope it moons hard");
+  //   score++;
+  // } else {
+  //   // console.log("Its not for everyone");
+  //   alert(name + " Its not for everyone");
+  // }
+
+  // Game starts
+
+  // alert("Lets play a number guessing game. Pick a number between 1-10");
+
+  // let game; // prompt(
+  // // "Lets play a number guessing game. Pick a number between 1-10");
+  // let favNumber = Math.floor(Math.random() * 10 + 1);
+  // console.log(favNumber);
+  // for (let i = 0; i <= 4; i++) {
+  //   if (i === 4) {
+  //     alert(
+  //       "You have exceed your maximum amount of trys. Better luck next time the number is" +
+  //         favnumber
+  //     );
+  //     break;
+  //   }
+
+  //   game = prompt(
+  //     "Lets play a number guessing game. Pick a number between 1-10"
+  //   );
+  //   if (game < favNumber) {
+  //     alert("So close but its higher than that");
+  //   } else if (game > favNumber) {
+  //     alert("So close. But its lower than that");
+  //   } else {
+  //     alert(" Well done you got it " + favNumber);
+  //     score++;
+  //     break;
+  //   }
+  // }
+
+  // Colour game
+
+  // let answers = ["yellow", "green", "black"];
+  // let guess = prompt("What is my favourite colour?");
+  // let won = false;
+  // let answersString = "";
+
+  // for (let i = 0; i < answers.length; i++) {
+  //   if (i === 0) {
+  //     answersString += answers[i];
+  //   } else {
+  //     answersString += ", " + answers[i];
+  //   }
+  // }
+
+  // for (let i = 1; i <= 6; i++) {
+  //   if (i === 6) {
+  //     alert("Better luck next time");
+  //     break;
+  //   }
+
+  //   for (let i = 0; i < answers.length; i++) {
+  //     if (guess === answers[i]) {
+  //       won = true;
+  //       alert(
+  //         "Well done you got it correct. All the correct answers are " +
+  //           answersString
+  //       );
+  //       score++;
+  //       break;
+  //     }
+  //   }
+
+  //   if (won === true) {
+  //     break;
+  //   } else {
+  //     guess = prompt("Nope, Sorry not the correct answer!");
+  //   }
+  //   alert("Well done in the game. You final score is " + score + "/7");
+  // }
 }
 
 //   let input; // users input
