@@ -22,7 +22,7 @@ function questionOne() {
     // console.log("Great lets get started");
   } else {
     // console.log("You sure you dont wanna try");
-    alert(name + "You sure you dont wanna try");
+    alert(name + "You sure you dont wanna try!");
   }
 }
 
