@@ -97,13 +97,14 @@ h6 {
 }
 
 .container-02 {
+  background-color: #28263d;
   margin: 1.2rem auto;
   padding: 0 auto;
   max-width: 1100px;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  border: 2px solid #8d8a82;
+  border: 2px solid #f2c98cb4;
 }
 
 h1 {
@@ -140,13 +141,14 @@ h1 {
 }
 
 .container-03 {
+  background-color: #28263d;
   margin: 1.2rem auto;
   padding: 0 auto;
   max-width: 1100px;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  border: 2px solid #8d8a82;
+  border: 2px solid #f2c98cb4;
 }
 
 .education h2 {
@@ -165,13 +167,14 @@ h1 {
 }
 
 .container-04 {
+  background-color: #28263d;
   margin: 1.2rem auto;
   padding: 0 auto;
   max-width: 1100px;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  border: 2px solid #8d8a82;
+  border: 2px solid #f2c98cb4;
 }
 
 .work h3 {
@@ -194,13 +197,14 @@ h1 {
 }
 
 .container-05 {
+  background-color: #28263d;
   margin: 1.2rem auto;
   padding: 0 auto;
   max-width: 1100px;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  border: 2px solid #8d8a82;
+  border: 2px solid #f2c98cb4;
 }
 
 .goals {
@@ -220,13 +224,14 @@ h1 {
 }
 
 .container-06 {
+  background-color: #28263d;
   margin: 1.2rem auto;
   padding: 0 auto;
   max-width: 1100px;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  border: 2px solid #8d8a82;
+  border: 2px solid #f2c98cb4;
 }
 
 .crypto {
