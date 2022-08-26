@@ -137,9 +137,9 @@ function questionSix() {
       "Lets play a number guessing game. Pick a number between 1-10"
     );
     if (game < favNumber) {
-      alert("So close but its higher than that");
+      alert("Its higher than that");
     } else if (game > favNumber) {
-      alert("So close. But its lower than that");
+      alert("Its lower than that");
     } else {
       score++;
       alert(" Well done you got it " + favNumber);
