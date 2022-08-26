@@ -1,0 +1,309 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: #1d1c2a;
+}
+body {
+  font-family: "Sora", sans-serif;
+  color: #fffffa;
+  /* background: url(https://wallpaperaccess.com/full/6093753.jpg) no-repeat center
+    center fixed; */
+  background-size: cover;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 auto;
+  max-width: 1100px;
+}
+
+header {
+  width: 90%;
+  max-width: 1100px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.6rem;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.logo {
+  color: #fffffa;
+  font-size: 2rem;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.navlist li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.navlist ul {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navlist li:hover {
+  text-underline-offset: 2px;
+  text-decoration: underline 2px;
+  text-decoration-color: bisque;
+}
+
+.btn {
+  margin: 1rem 0;
+  cursor: pointer;
+  border-style: groove;
+  background-color: #1d1c2a;
+  color: white;
+  padding: 7px;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.btn:active {
+  box-shadow: 7px 7px 30px 7px #323f6982;
+}
+
+.btn:hover {
+  color: #1d1c2a;
+  background-color: #fffffa;
+}
+
+.container-01 {
+  margin: 1.2rem auto;
+  padding: 0 auto;
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-02 {
+  margin: 1.2rem auto;
+  padding: 0 auto;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 2px solid #8d8a82;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+.bio {
+  margin: 0.5rem 0;
+  padding: 0rem 0.6rem;
+}
+
+.bio h2 {
+  display: flex;
+  justify-content: center;
+  margin: 0.8rem 0;
+}
+
+.bio p {
+  margin-bottom: 1rem;
+  line-height: 150%;
+}
+
+.bio img {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 100%;
+  padding: 5px;
+}
+
+.container-03 {
+  margin: 1.2rem auto;
+  padding: 0 auto;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 2px solid #8d8a82;
+}
+
+.education h2 {
+  display: flex;
+  justify-content: center;
+  margin: 0.8rem 0;
+}
+
+.education ul {
+  margin-left: 1rem;
+  list-style: square;
+}
+
+.education li {
+  padding: 1rem;
+}
+
+.container-04 {
+  margin: 1.2rem auto;
+  padding: 0 auto;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 2px solid #8d8a82;
+}
+
+.work h3 {
+  display: flex;
+  justify-content: center;
+  margin: 0.8rem 0;
+}
+
+.work li {
+  padding: 1rem;
+}
+.work ul {
+  margin-left: 1rem;
+  list-style: square;
+}
+
+.work p {
+  margin-bottom: 1rem;
+  line-height: 150%;
+}
+
+.container-05 {
+  margin: 1.2rem auto;
+  padding: 0 auto;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 2px solid #8d8a82;
+}
+
+.goals {
+  margin: 0.5rem 0;
+  padding: 0rem 0.6rem;
+}
+
+.goals h4 {
+  display: flex;
+  justify-content: center;
+  margin: 0.8rem 0;
+}
+
+.goals p {
+  margin-bottom: 1rem;
+  line-height: 150%;
+}
+
+.container-06 {
+  margin: 1.2rem auto;
+  padding: 0 auto;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 2px solid #8d8a82;
+}
+
+.crypto {
+  margin: 0.5rem 0;
+  padding: 0rem 0.6rem;
+}
+
+.crypto h5 {
+  display: flex;
+  justify-content: center;
+  margin: 0.8rem 0;
+}
+
+.crypto p {
+  margin-bottom: 1rem;
+  line-height: 150%;
+  display: flex;
+  justify-content: center;
+}
+
+.tokens ol {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tokens li {
+  padding: 1rem;
+}
+
+.bio,
+.education,
+.work,
+.goals,
+.crypto {
+  padding: 1rem;
+}
+
+.container-07 {
+  margin: 0 auto;
+  padding: 0 auto;
+  max-width: 1100px;
+}
+
+.bottom ul {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom li {
+  margin: 1rem;
+  list-style: none;
+}
+
+.bottom li a {
+  color: #fffffa;
+  text-decoration: none;
+}
+
+/* @media only screen and (max-width: 1100px) {
+  .container-02,
+  .container-03,
+  .container-04,
+  .container-05,
+  .container-06 {
+    margin: 2rem 0.8rem;
+  }
+} */
+/* 
+@media only screen and (max-width: 1100px) {
+  .container-02 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container-02 img {
+    width: 100%;
+  }
+} */
