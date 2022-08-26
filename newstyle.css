@@ -83,6 +83,7 @@ h6 {
 }
 
 .btn:hover {
+  cursor: pointer;
   color: #1d1c2a;
   background-color: #f2c98cfa;
 }
