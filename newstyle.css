@@ -38,11 +38,12 @@ h6 {
   font-size: 1.6rem;
   text-decoration: underline;
   text-underline-offset: 2px;
+  text-decoration-color: #f2c98c;
 }
 
 .logo {
-  color: #fffffa;
-  font-size: 2rem;
+  color: #f2c98c;
+  font-size: 3rem;
   margin: 1rem 0;
   display: flex;
   justify-content: center;
@@ -63,7 +64,7 @@ h6 {
 .navlist li:hover {
   text-underline-offset: 2px;
   text-decoration: underline 2px;
-  text-decoration-color: bisque;
+  text-decoration-color: #f2c98c;
 }
 
 .btn {
@@ -78,12 +79,12 @@ h6 {
 }
 
 .btn:active {
-  box-shadow: 7px 7px 30px 7px #323f6982;
+  box-shadow: 7px 7px 30px 7px hsla(36, 80%, 75%, 0.627);
 }
 
 .btn:hover {
   color: #1d1c2a;
-  background-color: #fffffa;
+  background-color: #f2c98cfa;
 }
 
 .container-01 {
@@ -256,6 +257,10 @@ h1 {
 
 .tokens li {
   padding: 1rem;
+}
+
+.tokens span {
+  color: #f2c98c;
 }
 
 .bio,
